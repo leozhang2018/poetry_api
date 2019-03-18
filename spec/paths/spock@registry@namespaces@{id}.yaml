@@ -1,0 +1,14 @@
+parameters:
+  - name: id
+    in: path
+    description: 镜像仓库ID
+    required: true
+    schema:
+      type: string
+delete:
+  tags:
+    - spock
+  summary: 删除镜像仓库
+  responses:
+    '200':
+      description: 成功
