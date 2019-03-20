@@ -29,4 +29,6 @@ post:
       application/json:
         schema:
           $ref: '#/components/schemas/Registry'
-
+  responses:
+    '200':
+      description: 成功
