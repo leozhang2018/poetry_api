@@ -5,6 +5,17 @@ parameters:
     required: true
     schema:
       type: string
+put:
+  tags:
+    - spock
+  summary: 更新镜像仓库
+  requestBody:
+    description: 更新镜像仓库
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: '#/components/schemas/Registry'
 delete:
   tags:
     - spock

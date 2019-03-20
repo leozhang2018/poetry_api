@@ -2,6 +2,7 @@ type: object
 properties:
   id:
     type: string
+    readOnly: true
   org_id:
     type: string
   reg_addr:
@@ -20,5 +21,7 @@ properties:
     type: string
   update_time:
     type: integer
+    readOnly: true
   update_by:
     type: string
+    readOnly: true

@@ -28,51 +28,5 @@ post:
     content:
       application/json:
         schema:
-          type: object
-          properties:
-            org_id:
-              type: string
-            reg_addr:
-              type: string
-            reg_type:
-              type: string
-            reg_provider:
-              type: string
-            is_default:
-              type: boolean    
-            namespace:
-              type: string
-            access_key:
-              type: string
-            secret_key:
-              type: string
-put:
-  tags:
-    - spock
-  summary: 更新镜像仓库
-  requestBody:
-    description: 更新镜像仓库
-    required: true
-    content:
-      application/json:
-        schema:
-          type: object
-          properties:
-            id:
-              type: integer
-            org_id:
-              type: string
-            reg_addr:
-              type: string
-            reg_type:
-              type: string
-            reg_provider:
-              type: string
-            is_default:
-              type: boolean    
-            namespace:
-              type: string
-            access_key:
-              type: string
-            secret_key:
-              type: string
+          $ref: '#/components/schemas/Registry'
+
